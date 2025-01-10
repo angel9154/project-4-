@@ -35,6 +35,7 @@ INSTALLED_APPS = [
      'rest_framework',  # add this
     'student_api',
     'skill_api',
+    'company_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

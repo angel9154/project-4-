@@ -6,6 +6,6 @@ class Student(models.Model):
     age = models.IntegerField()
     # skillId = models.IntegerField()
     skill = models.ForeignKey(Skill, related_name='students', on_delete=models.CASCADE)  # Link to Skill model
-
+     
     def __str__(self):
         return self.name
