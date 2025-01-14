@@ -31,8 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-     'corsheaders', # add this
-     'rest_framework',  # add this
+    'corsheaders', # add this
+    'rest_framework',  # add this
     'student_api',
     'skill_api',
     'company_api',
@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -84,8 +85,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'project4_api',
-        'USER': 'gerena13',
-        'PASSWORD': 'test1',
+        'USER': '',
+        'PASSWORD': '',
         'HOST': 'localhost',
     }   
 }

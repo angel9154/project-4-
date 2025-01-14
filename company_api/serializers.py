@@ -8,6 +8,7 @@ class SkillSerializer(serializers.ModelSerializer):
         fields = ('id', 'skill')
 
 class CompanySerializer(serializers.ModelSerializer):
+  skill = SkillSerializer()
   class Meta:
         model = Company # tell django which model to use
         fields = ('id', 'name', 'skill',) # tell django which fields to include

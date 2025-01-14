@@ -1,0 +1,7 @@
+Changes:
+- line 48 added Cors middleware in settings.py
+- line 24 in project url.py aded 'api/' to quotes
+- line 5 & 6 in companies url.py took out "api/" from path because its now used in main project url.py and added / to end of each url path
+- add "def __str__(self):
+        return self.name" to bottom of all models
+- changed line 11 to primary key serializer
