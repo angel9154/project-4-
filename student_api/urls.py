@@ -1,7 +1,7 @@
 from django.urls import path
-from . import views
-
+from .views import StudentList, StudentDetail, get_compatible_entities
 urlpatterns = [
-    path('students/', views.StudentList.as_view(), name='student_list'), # api/contacts will be routed to the ContactList view for handling
-    path('students/<int:pk>/', views.StudentDetail.as_view(), name='student_detail'), # api/contacts will be routed to the ContactDetail view for handling
+    path('students/', StudentList.as_view(), name='student_list'),
+    path('students/<int:pk>/', StudentDetail.as_view(), name='student_detail'),
+    path('compatibles/', get_compatible_entities, name='get_compatibles'),  # Use the imported function
 ]
