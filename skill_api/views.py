@@ -12,3 +12,4 @@ class SkillDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Skill.objects.all().order_by('id')
     serializer_class = SkillSerializer
     
+    # New function-based view
