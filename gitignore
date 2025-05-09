@@ -5,3 +5,7 @@ Changes:
 - add "def __str__(self):
         return self.name" to bottom of all models
 - changed line 11 to primary key serializer
+
+
+to run this, avtivate the environment with: source  /Users/cheezdoodle/ga-env/bin/activate
+then start the server with: python manage.py runserverpython -

@@ -1,6 +1,6 @@
 from django.db import models
 from skill_api.models import Skill
-# Create your models here.
+
 class Student(models.Model):
     name = models.CharField(max_length=50)
     age = models.IntegerField()
